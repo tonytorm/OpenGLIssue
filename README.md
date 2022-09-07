@@ -1,2 +1,2 @@
 # OpenGLIssue
-A little demo to showcase a bug within JUCE7 openGL rendering
+A little demo to demonstrate a possible bug within JUCE7 openGL rendering
