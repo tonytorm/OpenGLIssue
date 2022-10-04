@@ -46,7 +46,7 @@ private:
     openGLComponent opengl;
     StretchableLayoutManager myLayout;
     StretchableLayoutResizerBar resizerBar { &myLayout, 1, true };
-    mResizerBar otherResizerBar { &dumComponent };
+    //mResizerBar otherResizerBar { &dumComponent };
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainComponent)
 };
