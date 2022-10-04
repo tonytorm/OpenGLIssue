@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <JUCERPROJECT id="vzMn41" name="NewProject" projectType="guiapp" useAppConfig="0"
-              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1">
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1"
+              cppLanguageStandard="17">
   <MAINGROUP id="uSqhAv" name="NewProject">
     <GROUP id="{B25DADDD-372D-F80B-619F-954B51541050}" name="Source">
       <FILE id="Ruajf2" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
@@ -12,6 +13,8 @@
             file="Source/openGLComponent.cpp"/>
       <FILE id="UKp91G" name="openGLComponent.h" compile="0" resource="0"
             file="Source/openGLComponent.h"/>
+      <FILE id="wz9Xgi" name="mResizerBar.cpp" compile="1" resource="0" file="Source/mResizerBar.cpp"/>
+      <FILE id="S7BEsZ" name="mResizerBar.h" compile="0" resource="0" file="Source/mResizerBar.h"/>
     </GROUP>
   </MAINGROUP>
   <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>

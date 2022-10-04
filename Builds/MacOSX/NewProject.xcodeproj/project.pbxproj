@@ -23,6 +23,7 @@
 		C4C3FC6AE819D5E475A42203 /* WebKit.framework */ = {isa = PBXBuildFile; fileRef = D65054928C7D54F24F4817AA; };
 		D7F99352FB491D797F316E5B /* include_juce_graphics.mm */ = {isa = PBXBuildFile; fileRef = 2E85AA79BDEE0F32B253B052; };
 		FB4C2F48E5E256553F976685 /* include_juce_gui_extra.mm */ = {isa = PBXBuildFile; fileRef = 52262D3B02A048A13D9128CF; };
+		FBE595088D132DE0AB827CD7 /* mResizerBar.cpp */ = {isa = PBXBuildFile; fileRef = BA23E50D42E59359D02C996A; };
 		FE87AE87732CE5D91BBBA4D5 /* RecentFilesMenuTemplate.nib */ = {isa = PBXBuildFile; fileRef = EE905F7C73C6E3E8D11AF347; };
 		FFA1EC0AFC179F035F5479E8 /* include_juce_events.mm */ = {isa = PBXBuildFile; fileRef = 23C84A2B82D8EE7747542ADB; };
 /* End PBXBuildFile section */
@@ -38,6 +39,7 @@
 		4F3C898550409FED988C487A /* juce_events */ /* juce_events */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_events; path = /Users/tonytorm/Documents/Introspecter/IntroJUCE/modules/juce_events; sourceTree = "<absolute>"; };
 		5182A75D73FCD2B5D0C7DC8C /* include_juce_data_structures.mm */ /* include_juce_data_structures.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_data_structures.mm; path = ../../JuceLibraryCode/include_juce_data_structures.mm; sourceTree = SOURCE_ROOT; };
 		52262D3B02A048A13D9128CF /* include_juce_gui_extra.mm */ /* include_juce_gui_extra.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_gui_extra.mm; path = ../../JuceLibraryCode/include_juce_gui_extra.mm; sourceTree = SOURCE_ROOT; };
+		57EFE142075B5CE2633435DB /* mResizerBar.h */ /* mResizerBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = mResizerBar.h; path = ../../Source/mResizerBar.h; sourceTree = SOURCE_ROOT; };
 		59C48F92F20AF5ADD96F97B9 /* MainComponent.h */ /* MainComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainComponent.h; path = ../../Source/MainComponent.h; sourceTree = SOURCE_ROOT; };
 		733361FA9A504423C1EEF9DC /* include_juce_gui_basics.mm */ /* include_juce_gui_basics.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_gui_basics.mm; path = ../../JuceLibraryCode/include_juce_gui_basics.mm; sourceTree = SOURCE_ROOT; };
 		74F72267ABB07DC218040B9D /* juce_core */ /* juce_core */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_core; path = /Users/tonytorm/Documents/Introspecter/IntroJUCE/modules/juce_core; sourceTree = "<absolute>"; };
@@ -48,6 +50,7 @@
 		9B5868B61AB8F148E955217D /* JuceHeader.h */ /* JuceHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JuceHeader.h; path = ../../JuceLibraryCode/JuceHeader.h; sourceTree = SOURCE_ROOT; };
 		AC6E59621B85CC054C413ECE /* Main.cpp */ /* Main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Main.cpp; path = ../../Source/Main.cpp; sourceTree = SOURCE_ROOT; };
 		B98B97FAC71847A45011A6B5 /* Info-App.plist */ /* Info-App.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-App.plist"; path = "Info-App.plist"; sourceTree = SOURCE_ROOT; };
+		BA23E50D42E59359D02C996A /* mResizerBar.cpp */ /* mResizerBar.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = mResizerBar.cpp; path = ../../Source/mResizerBar.cpp; sourceTree = SOURCE_ROOT; };
 		C8BE9E28149E1CEE8DB61C84 /* juce_gui_basics */ /* juce_gui_basics */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_gui_basics; path = /Users/tonytorm/Documents/Introspecter/IntroJUCE/modules/juce_gui_basics; sourceTree = "<absolute>"; };
 		CB14DBF7BECB7879D35E74C7 /* juce_opengl */ /* juce_opengl */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_opengl; path = /Users/tonytorm/Documents/Introspecter/IntroJUCE/modules/juce_opengl; sourceTree = "<absolute>"; };
 		D360425BB761A7F8DF777923 /* juce_data_structures */ /* juce_data_structures */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_data_structures; path = /Users/tonytorm/Documents/Introspecter/IntroJUCE/modules/juce_data_structures; sourceTree = "<absolute>"; };
@@ -92,6 +95,8 @@
 				887689579F119DAA0F8A2420,
 				149A554C17A925F13CBA4EEA,
 				36A18C99FDDCA9519A7CEE79,
+				BA23E50D42E59359D02C996A,
+				57EFE142075B5CE2633435DB,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -256,6 +261,7 @@
 				08B3E55E21032817B29D2E4C,
 				422C456B4B4ACE7954019478,
 				63C2A94E0557AE2EA1A092F4,
+				FBE595088D132DE0AB827CD7,
 				B36221CEA3A61F9D2D7160AF,
 				4E431098B4C4307C8579CF3F,
 				FFA1EC0AFC179F035F5479E8,
@@ -320,7 +326,7 @@
 		989BB2D54E94A0929C113BC3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_LINK_OBJC_RUNTIME = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -431,7 +437,7 @@
 		F6080626CCEBF6C6957844B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_LINK_OBJC_RUNTIME = NO;
 				CODE_SIGN_IDENTITY = "";

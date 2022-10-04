@@ -2,6 +2,7 @@
 
 #include <JuceHeader.h>
 #include "openGLComponent.h"
+#include "mResizerBar.h"
 
 class DummyComp : public Component
 {
@@ -11,11 +12,18 @@ public:
     
     void paint(Graphics& g) override{
         g.fillAll(Colours::white);
+        
+        for (int i = 0 ; i < 5000; i++){       // simulating a busy UI
+            g.setColour(Colours::red);
+            g.drawText("SIMULATE UI", 0, 0, getWidth(), getRight(), Justification::left);
+        }
     }
     
 private:
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (DummyComp)
 };
+
+
 
 //==============================================================================
 //==============================================================================
@@ -34,8 +42,11 @@ public:
    
 private:
     ConcertinaPanel concertinaR;
-    DummyComp component;
+    DummyComp component, dumComponent;
     openGLComponent opengl;
+    StretchableLayoutManager myLayout;
+    StretchableLayoutResizerBar resizerBar { &myLayout, 1, true };
+    mResizerBar otherResizerBar { &dumComponent };
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainComponent)
 };
